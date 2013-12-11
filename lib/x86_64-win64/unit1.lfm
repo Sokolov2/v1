@@ -1,0 +1,115 @@
+object Form1: TForm1
+  Left = 481
+  Height = 362
+  Top = 181
+  Width = 656
+  Caption = 'Lab 4 Арефьев 322б'
+  ClientHeight = 362
+  ClientWidth = 656
+  LCLVersion = '1.0.1.3'
+  object Label1: TLabel
+    Left = 8
+    Height = 26
+    Top = 16
+    Width = 145
+    Caption = 'X^3 -X^2 - 9.5 = 0'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Chart1: TChart
+    Left = 248
+    Height = 344
+    Top = 8
+    Width = 400
+    AxisList = <    
+      item
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Alignment = calBottom
+        Minors = <>
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    ParentColor = False
+    object Chart1LineSeries1: TLineSeries
+    end
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 72
+    Width = 104
+    TabOrder = 1
+    Text = '0,001'
+  end
+  object Edit2: TEdit
+    Left = 128
+    Height = 23
+    Top = 72
+    Width = 104
+    TabOrder = 2
+    Text = '2,0'
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 16
+    Top = 56
+    Width = 53
+    Caption = 'Точность'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 128
+    Height = 16
+    Top = 56
+    Width = 81
+    Caption = 'Левая граница'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 120
+    Width = 104
+    Caption = 'Вычислить'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Label5: TLabel
+    Left = 128
+    Height = 16
+    Top = 104
+    Width = 89
+    Caption = 'Правая граница'
+    ParentColor = False
+  end
+  object Edit4: TEdit
+    Left = 128
+    Height = 23
+    Top = 120
+    Width = 104
+    TabOrder = 4
+    Text = '3,0'
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 186
+    Top = 160
+    Width = 224
+    ScrollBars = ssAutoVertical
+    TabOrder = 5
+  end
+end
